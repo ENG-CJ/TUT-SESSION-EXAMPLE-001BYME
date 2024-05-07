@@ -11,6 +11,7 @@ function startSession(username) {
 
   sessionStorage.setItem('username', username)
   const expirationTime = new Date().getTime() + sessionTimeout;
+
   sessionStorage.setItem('expirationTime', expirationTime);
 }
 
