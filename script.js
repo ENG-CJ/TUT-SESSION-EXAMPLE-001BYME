@@ -1,4 +1,6 @@
-
+// vars
+let radomizedUser ;
+var iinitialCountable;
 
 const sessionTime = 1;
 const sessionTimeout = sessionTime * 60000; 
@@ -11,7 +13,6 @@ function startSession(username) {
 
   sessionStorage.setItem('username', username)
   const expirationTime = new Date().getTime() + sessionTimeout;
-
   sessionStorage.setItem('expirationTime', expirationTime);
 }
 
