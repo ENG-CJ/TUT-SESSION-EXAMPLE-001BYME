@@ -65,3 +65,11 @@ document.querySelector(".log").addEventListener('click', function(){
   sessionMessage.classList.add("d-none")
 })
 
+
+// Function to clear session data
+function clearSessionData() {
+  sessionStorage.clear();
+}
+
+// Attach the 'beforeunload' event listener
+// window.addEventListener('beforeunload', clearSessionData);
