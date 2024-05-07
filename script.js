@@ -36,7 +36,8 @@ function displaySessionStatus() {
   const currentUsername = sessionStorage.getItem('username');
   if (currentUsername) {
     console.log("This ios message ")
-    userMessage.innerHTML = `Welcome, ${currentUsername}! Your session is active.`;
+    var innerChild = document.querySelector(`.user-message .user`)
+    innerChild.innerHTML = currentUsername
     userMessage.classList.remove("d-none")
     loginContainer.classList.add("d-none")
     sessionMessage.classList.add("d-none")
